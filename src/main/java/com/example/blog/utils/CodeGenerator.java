@@ -12,13 +12,11 @@ import com.baomidou.mybatisplus.generator.config.po.TableFill;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
-import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import com.baomidou.mybatisplus.generator.engine.VelocityTemplateEngine;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 public class CodeGenerator {
     public static String scanner(String tip) {
         Scanner scanner = new Scanner(System.in);
@@ -36,8 +34,6 @@ public class CodeGenerator {
 
 
 
-
-
     public static void main(String[] args) {
         // 代码生成器
         AutoGenerator mpg = new AutoGenerator();
@@ -46,7 +42,7 @@ public class CodeGenerator {
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
         gc.setOutputDir(projectPath + "/src/main/java");//设置代码生成路径
-        gc.setFileOverride(true);//是否覆盖以前文件
+        gc.setFileOverride(false);//是否覆盖以前文件
         gc.setOpen(false);//是否打开生成目录
         gc.setAuthor("spark");//设置项目作者名称
         gc.setIdType(IdType.AUTO);//设置主键策略

@@ -7,16 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>
- *  前端控制器
+ * 页面 前端控制器
  * </p>
  *
  * @author spark
- * @since 2023-03-08
+ * @since 2023-03-09
  */
 @RestController
-@RequestMapping("/user-info")
-public class UserInfoController {
-
+@RequestMapping("/page")
+public class PageController {
 
 }
 

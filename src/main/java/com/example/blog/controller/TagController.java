@@ -11,12 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
  * </p>
  *
  * @author spark
- * @since 2023-03-08
+ * @since 2023-03-09
  */
 @RestController
-@RequestMapping("/user-info")
-public class UserInfoController {
-
+@RequestMapping("/tag")
+public class TagController {
 
 }
 

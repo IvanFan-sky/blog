@@ -1,17 +1,14 @@
 package com.example.blog.entity;
 
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.annotation.IdType;
-import java.util.Date;
-import com.baomidou.mybatisplus.annotation.Version;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.TableField;
-import java.io.Serializable;
+import com.baomidou.mybatisplus.annotation.*;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+
+import java.io.Serializable;
+import java.util.Date;
 
 /**
  * <p>
@@ -22,6 +19,7 @@ import lombok.EqualsAndHashCode;
  * @since 2023-03-08
  */
 @Data
+@Builder
 @EqualsAndHashCode(callSuper = false)
 @TableName("tb_user_info")
 @ApiModel(value="UserInfo对象", description="")
@@ -49,7 +47,7 @@ public class UserInfo implements Serializable {
     private String webSite;
 
     @ApiModelProperty(value = "是否禁用")
-    private Boolean isDisable;
+    private Integer isDisable;
 
     @ApiModelProperty(value = "创建时间")
     @TableField(fill = FieldFill.INSERT)

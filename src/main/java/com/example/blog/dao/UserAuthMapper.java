@@ -1,7 +1,7 @@
 package com.example.blog.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.example.blog.entity.UserInfo;
+import com.example.blog.entity.UserAuth;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -13,6 +13,6 @@ import org.apache.ibatis.annotations.Mapper;
  * @since 2023-03-08
  */
 @Mapper
-public interface UserInfoMapper extends BaseMapper<UserInfo> {
+public interface UserAuthMapper extends BaseMapper<UserAuth> {
 
 }
